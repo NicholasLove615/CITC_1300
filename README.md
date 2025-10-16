@@ -1,1 +1,1 @@
-# CITC_1300
+# CITC 1300 class projects

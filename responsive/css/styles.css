@@ -1,0 +1,173 @@
+/* Global Styles */
+
+body {
+    background-color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+
+#container {
+    padding: 10px;
+    border: 6px solid #F21D2F;
+    border-radius: 8px;
+    background-color: #03588C;
+}
+
+header {
+    background-image: url(../images/cardsball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    opacity: 65%;
+}
+
+header h1 {
+    font-size: 35px;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px black;
+}
+
+nav {
+    text-align: center;
+
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    
+}
+
+nav li a {
+    display: block;
+    background-color:#F2CB05;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav li a:hover {
+    background-color: #F2A516;
+}
+
+.col {
+    margin: 10px 0;
+}
+
+.col img {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Table Styles */
+
+@media (min-width: 768px) {
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        border: 5px solid #F21D2F;
+        border-radius: 6px;
+
+    }
+
+    .col img {
+        width: 65%;
+    }
+}
+
+/* Desktop Styles*/
+
+@media (min-width: 1024px) {
+#container {
+    width: 65%;
+    margin: 20px auto;
+    background-color: #03588C;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #F21D2F;
+    border-radius: 20px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+section {
+    width: 75%;
+}
+
+section img {
+    border-radius: 10px;
+    border: 2px solid #F21D2F;
+    width: 75%;
+}
+
+.multi_col {
+    display: flex;
+}
+
+section, aside {
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 4px solid  #F21D2F;
+    margin: 20px;
+    padding: 20px;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+aside img {
+    width: 75%;
+    border: 2px solid  #F21D2F;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 2px 2px 2px black;
+}
+
+}
+

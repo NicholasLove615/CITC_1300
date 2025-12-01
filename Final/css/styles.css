@@ -1,0 +1,377 @@
+/* GLOBAL RESET / BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #0b1a33, #12335f);
+    color: #222;
+    line-height: 1.7;
+}
+
+/* MAIN PAGE CONTAINER */
+#container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border: 1px solid #162846;
+}
+
+/* HEADER*/
+header {
+    background: radial-gradient(circle at top left, #42a5f5, #0d47a1);
+    color: #fff;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/*NAVIGATION */
+nav {
+    background-color: #10223f;
+    border-bottom: 1px solid #1f3b64;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #e3f2fd;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #42a5f5;
+    color: #0b1a33;
+    transform: translateY(-1px);
+    outline: none;
+}
+
+/* MAIN CONTENT AREA */
+main {
+    padding: 25px 28px 32px;
+}
+
+/* Two-column layout */
+.multi_col {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Left column: main text */
+.multi_col section {
+    flex: 2;
+}
+
+/* Headings & text */
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #0d47a1;
+    border-bottom: 2px solid #e3f2fd;
+    padding-bottom: 6px;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: #1565c0;
+}
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+/* Style lists inside main section */
+main section ul {
+    margin: 10px 0 15px 20px;
+    padding-left: 15px;
+}
+
+main section ul li {
+    margin-bottom: 6px;
+}
+
+/* Links inside main content */
+main a {
+    color: #0d47a1;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+main a:hover,
+main a:focus {
+    color: #42a5f5;
+    text-decoration-color: #42a5f5;
+}
+
+/* Image styling */
+main img {
+    max-width: 100%;
+    display: block;
+    margin: 18px auto 22px;
+    border-radius: 12px;
+    border: 3px solid #e3f2fd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/*POPULAR LEAGUES COLUMN*/
+
+
+.league_col {
+    flex: 1;
+    background-color: #f5f7fb;
+    border-radius: 12px;
+    padding: 15px 18px 18px;
+    border: 1px solid #d0d7ea;
+    position: sticky;
+    top: 15px;
+}
+
+.league_col h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.league_col ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.league_col li {
+    margin-bottom: 8px;
+}
+
+.league_col a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: 600;
+    padding: 7px 10px;
+    display: block;
+    border-radius: 6px;
+    background-color: #e9f1ff;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.league_col a:hover,
+.league_col a:focus {
+    background-color: #42a5f5;
+    color: #fff;
+    transform: translateX(3px);
+    outline: none;
+}
+
+
+.highlight-box {
+    background-color: #e3f2fd;
+    border-left: 4px solid #1565c0;
+    padding: 12px 14px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* FOOTER*/
+footer {
+    background-color: #10223f;
+    color: #e3f2fd;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.87rem;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #1f3b64;
+}
+
+/*RESPONSIVE STYLES*/
+@media (max-width: 800px) {
+    #container {
+        margin: 15px;
+    }
+
+    .multi_col {
+        flex-direction: column;
+    }
+
+    .league_col {
+        position: static;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #1f3b64;
+    }
+
+    nav li:first-child a {
+        border-top: none;
+    }
+}
+
+/* FAVORITES PAGE LAYOUT */
+
+.fav_layout {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+}
+
+/* Left sidebar */
+.fav_sidebar {
+    flex: 1;
+    background-color: #f1f5ff;
+    border-left: 5px solid #1565c0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.fav_sidebar h3 {
+    margin-bottom: 10px;
+    color: #0d47a1;
+}
+
+.fav_sidebar ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.fav_sidebar li {
+    margin-bottom: 12px;
+    padding-left: 6px;
+    border-left: 3px solid #42a5f5;
+}
+
+/* Main content right column */
+.fav_content {
+    flex: 2;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.fav_content h2,
+.fav_content h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.fav_content figure {
+    margin: 20px 0;
+}
+
+.fav_content img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #e3f2fd;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 800px) {
+    .fav_layout {
+        flex-direction: column;
+    }
+
+    .fav_sidebar {
+        margin-bottom: 20px;
+    }
+}
+
+/* NASHVILLE PREDATORS COLOR THEME*/
+
+.preds_section {
+    background: #fdf7df; 
+    border: 4px solid #ffb81c; 
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+/* Predators banner stripe */
+.preds_section::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #041e42; /* Preds Navy */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Titles inside Preds section */
+.preds_section h2,
+.preds_section h3 {
+    color: #041e42; 
+    border-left: 6px solid #ffb81c;
+    padding-left: 10px;
+}
+
+/* Text styling */
+.preds_section p {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+/* Image styling inside Preds section */
+.preds_section img {
+    border: 4px solid #041e42;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
